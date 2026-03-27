@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncPulse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* RESET BÁSICO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('img/fundo.jpg'); /* imagem de fundo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* HEADER */
+        .header {
+            background: rgba(4, 83, 137, 0.9);
+            padding: 15px 0;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+
+        /* FUNCIONALIDADES */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            margin: 50px 0;
+            justify-content: space-between;
+            align-items: stretch; /* garante mesma altura */
+        }
+
+        .feature-card {
+            flex: 1 1 30%;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .feature-card i {
+            color: #045389;
+            margin-bottom: 15px;
+        }
+
+        /* PRODUTOS */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 50px 0;
+            justify-content: space-between;
+        }
+
+        .product-card {
+            flex: 1 1 30%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* RODAPÉ */
+        .footer {
+            background-color: rgba(4, 83, 137, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 900px) {
+            .feature-card, .product-card {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .feature-card, .product-card {
+                flex: 1 1 100%;
+            }
+
+            .header .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header nav a {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="logo">SyncPulse</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produto">Nosso produto</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato">Contato</a>
+            <a href="#quem-somos">Quem somos</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO / BANNER -->
+<section class="hero" id="inicio">
+    <img src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000033-ef2a9ef2aa/Captura%20de%20tela%202026-03-24%20214434.webp?ph=6eec2e5ab2" alt="Pulseiras SyncPulse" class="hero-img">
+</section>
+
+
+<!-- FUNCIONALIDADES -->
+<section class="features container" id="servicos">
+    <div class="feature-card">
+        <i class="fa-solid fa-calendar-days fa-3x"></i>
+        <h3>Planos personalizados</h3>
+        <p>Escolha o plano ideal para você, adaptado ao seu estilo e rotina.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fa-solid fa-heart-pulse fa-3x"></i>
+        <h3>Rastreamento em tempo real</h3>
+        <p>Veja todas as métricas diretamente no app, instantaneamente.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fa-solid fa-share-nodes fa-3x"></i>
+        <h3>Suporte da Comunidade</h3>
+        <p>Conte com a ajuda de outros usuários e dicas do nosso suporte.</p>
+    </div>
+</section>
+
+
+<section class="hero" id="inicio">
+    <img src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000035-3184031842/Captura%20de%20tela%202026-03-24%20215237.webp?ph=6eec2e5ab2"
+         alt="Pulseiras SyncPulse"
+         class="hero-img">
+</section>
+
+<section class="hero" id="inicio">
+    <img src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000037-7dc2d7dc2f/Captura%20de%20tela%202026-03-24%20220312.webp?ph=6eec2e5ab2"
+         alt="Pulseiras SyncPulse"
+         class="hero-img">
+</section>
+
+<section class="secao-flex">
+    <div class="container">
+        <div class="flex-box">
+
+            <img class="flex-img"
+                 src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000043-4375443756/24%20de%20mar.%20de%202026%2C%2022_13_30-2.webp?ph=6eec2e5ab2"
+                 alt="Pulseiras SyncPulse">
+
+            <div class="flex-texto">
+                <h2>Métricas corporais</h2>
+                <p>
+                    Nosso relógio inteligente com tecnologia IoT monitora sinais vitais em tempo real,
+                    alertando automaticamente em situações de risco.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="footer" id="contato">
+    <div class="container">
+        <p>&copy; 2026 SyncPulse. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

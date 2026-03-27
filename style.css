@@ -1,0 +1,127 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: rgba(4, 83, 137, 0.9);
+    padding: 15px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO (IMAGENS GRANDES) */
+.hero {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* SEÇÃO FLEX (IMAGEM + TEXTO) */
+/* ============================= */
+
+.secao-flex {
+    margin-top: 50px;
+}
+
+.secao-flex .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.secao-flex .flex-img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.secao-flex .flex-texto {
+    width: 50%;
+}
+
+.secao-flex .flex-texto h2 {
+    color: #045389;
+    margin-bottom: 10px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-card {
+    flex: 1 1 30%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background: rgba(4, 83, 137, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .secao-flex .flex-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secao-flex .flex-img,
+    .secao-flex .flex-texto {
+        width: 100%;
+    }
+}
