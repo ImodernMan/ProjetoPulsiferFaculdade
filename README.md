@@ -23,7 +23,7 @@ Interface moderna e limpa
 
 🌐 Acesse o projeto
 
-[(Coloque aqui o link do GitHub Pages)](https://imodernman.github.io/ProjetoPulsiferFaculdade/)
+[(https://imodernman.github.io/ProjetoPulsiferFaculdade/)]
 
 📚 Aprendizados
 
