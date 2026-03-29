@@ -17,12 +17,13 @@ Cards informativos com destaque visual
 Interface moderna e limpa
 📸 Preview
 
-<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/4e4ed854-6fe3-4e79-aa20-a1f865145f8a" />
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/a5b2b7e7-4b8f-4ca6-bcfa-c8a4e46bc10e" />
+
 
 
 🌐 Acesse o projeto
 
-(Coloque aqui o link do GitHub Pages)
+[(Coloque aqui o link do GitHub Pages)](https://imodernman.github.io/ProjetoPulsiferFaculdade/)
 
 📚 Aprendizados
 
