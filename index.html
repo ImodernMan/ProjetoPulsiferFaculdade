@@ -169,7 +169,14 @@
                 flex: 1 1 100%;
             }
         }
+.conteudo-extra {
+    display: none;
+    margin-top: 10px;
+}
 
+.feature-card.ativo .conteudo-extra {
+    display: block;
+}
     </style>
 </head>
 
@@ -199,23 +206,38 @@
 
 <!-- FEATURES -->
 <section class="features container">
-    <div class="feature-card">
+    <div class="feature-card" onclick="toggleCard(this)">
         <i class="fa-solid fa-calendar-days fa-3x"></i>
         <h3>Planos personalizados</h3>
         <p>Escolha o plano ideal para você, adaptado ao seu estilo e rotina.</p>
+        <div class="conteudo-extra">
+            <p>Oferecemos diferentes planos para atender desde quem está começando até quem busca melhorar o desempenho, permitindo que você evolua no seu próprio ritmo.</p>
+        </div>
     </div>
 
-    <div class="feature-card">
+
+
+    <div class="feature-card" onclick="toggleCard(this)">
         <i class="fa-solid fa-heart-pulse fa-3x"></i>
         <h3>Rastreamento em tempo real</h3>
         <p>Veja todas as métricas diretamente no app, instantaneamente.</p>
+
+        <div class="conteudo-extra">
+            <p>Acompanhe dados como batimentos cardíacos, qualidade do sono, passos e calorias em tempo real, com relatórios claros para acompanhar sua evolução.</p>
+        </div>
     </div>
 
-    <div class="feature-card">
+
+    <div class="feature-card" onclick="toggleCard(this)">
         <i class="fa-solid fa-share-nodes fa-3x"></i>
         <h3>Suporte da Comunidade</h3>
         <p>Conte com a ajuda de outros usuários e dicas do nosso suporte.</p>
+
+        <div class="conteudo-extra">
+            <p>Participe de uma comunidade ativa, compartilhe experiências e receba orientações para alcançar melhores resultados com o apoio de outros usuários.</p>
+        </div>
     </div>
+
 </section>
 
 <!-- IMAGENS -->
@@ -240,8 +262,9 @@
             <div class="flex-texto">
                 <h2>Métricas corporais</h2>
                 <p>
-                    Nosso relógio inteligente com tecnologia IoT monitora sinais vitais em tempo real,
-                    alertando automaticamente em situações de risco.
+                    Cuide da sua saúde de forma prática com nosso relógio inteligente.
+                    Tenha acesso em tempo real a dados como batimentos cardíacos, sono, passos e calorias, com gráficos simples e fáceis de entender no aplicativo.
+                    Veja sua evolução ao longo dos dias e receba alertas sempre que algo estiver fora do normal, garantindo mais segurança e controle no seu dia a dia.
                 </p>
             </div>
 
@@ -253,8 +276,14 @@
 <footer class="footer">
     <div class="container">
         <p>&copy;2026 Pulsifer. Todos os direitos reservados.</p>
+
     </div>
 </footer>
 
+<script>
+    function toggleCard(card) {
+        card.classList.toggle("ativo");
+    }
+</script>
 </body>
 </html>
